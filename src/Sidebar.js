@@ -5,7 +5,7 @@ import "./Sidebar.css";
 function Sidebar() {
 
     const recentItem = (topic) => (
-        <div className="sidebar__recentItems">
+        <div className="sidebar__recentItem">
             <span className="sidebar__hash">#</span>
             <p>{topic}</p>
         </div>
@@ -35,9 +35,9 @@ function Sidebar() {
                 <p>Recent</p>
                 {recentItem('reactjs')}
                 {recentItem('programming')}
-                {recentItem('reactjs')}
-                {recentItem('reactjs')}
-                {recentItem('reactjs')}
+                {recentItem('softwareengineering')}
+                {recentItem('design')}
+                {recentItem('developer')}
             </div>
         </div>
     )
