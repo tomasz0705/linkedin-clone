@@ -16,7 +16,7 @@ function Header() {
 
                 <div className="header__search">
                     <SearchIcon />
-                    <input type="text" />
+                    <input placeholder="Search" type="text" />
                 </div>
             </div>
 
@@ -26,7 +26,7 @@ function Header() {
                 <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
                 <HeaderOption Icon={ChatIcon} title="Messaging" />
                 <HeaderOption Icon={NotificationsIcon} title="Notifications" />
-                <HeaderOption avatar="https://media-exp1.licdn.com/dms/image/D4D35AQHto1fe7mf8mw/profile-framedphoto-shrink_100_100/0/1625497931503?e=1629403200&v=beta&t=ySCDZv_r8zwNxUL-ZFPQvzQH8QGPI-mF_-fYB3yOPuk" title='me'/>
+                <HeaderOption avatar="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/160px-Elon_Musk_Royal_Society.jpg" title='me'/>
             </div>
 
         </div>
