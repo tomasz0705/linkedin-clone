@@ -7,9 +7,9 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { auth } from './firebase';
-import { logout } from './features/userSlice';
+import { logout, selectUser } from './features/userSlice';
 
 function Header() {
     const dispatch = useDispatch();
@@ -36,7 +36,7 @@ function Header() {
                 <HeaderOption Icon={ChatIcon} title="Messaging" />
                 <HeaderOption Icon={NotificationsIcon} title="Notifications" />
                 <HeaderOption
-                    avatar="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/160px-Elon_Musk_Royal_Society.jpg"
+                    avatar={true}
                     title='me'
                     onClick={logoutOfApp}
                 />
